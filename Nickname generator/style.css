@@ -1,0 +1,101 @@
+body {
+    background-color: powderblue;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #444;
+}
+
+.logo {
+    margin: auto 10px;
+    padding: 0px;
+}
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    margin: auto 15px;
+    padding: 0;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+}
+.nav-links a:hover {
+    color: #fff;
+    text-decoration: underline;
+    background-color: orangered;
+    transition: all 0.3s;
+}
+
+.words {
+    width: 100%;
+    font-weight: 700;
+    margin: 30px auto;
+}
+.words h1 {
+    font-size: 1.6em;
+}
+
+.words h1, p {
+    color: #000;
+    padding: 0;
+    text-align: center;
+    line-height: 1rem;
+} 
+
+.words p{
+    font-size: 1em;
+}
+
+.warnings, .left-a {
+    color: red;
+    text-align: left;
+    font-size: 1em;
+    font-weight: 600;
+}
+.container {
+    margin: 50px auto;
+    padding: 30px;
+}
+
+.generator p {
+    display: inline;
+    margin: 30px auto;
+}
+
+#gen {
+    /* text-align: center; */
+}
+
+.btnGen {
+    color: #fff;
+    font-size: 1em;
+    background-color: orangered;
+    width: 25%;
+    height: 40%;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.btnGen:hover {
+    width: 23%;
+    height: 20%;
+    color: #fff;
+    background-color: rgb(182, 76, 37);
+    border: none;
+    transition: all 0.4s;
+}

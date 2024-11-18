@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nickname Generator</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/something.png" alt="NickGen logo">
+        </div>
+        <nav class="nav-links">
+            <ul>
+                <a href="#home">Home</a>
+                <a href="#about">About Us</a>
+                <a href="#contact">Contact</a>
+            </ul>
+        </nav>
+    </header>
+
+    <main>            
+        <section>
+            <div class="words">
+                <h1 style="color: white;">Nick-<span style="color: orangered;">Generator</span></h1>
+            <p>Welcome to Nick-Gen,Lorem ipsum dolor sit amet.</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="warnings">
+                <h4><strong>Warnings!</strong> </h4>
+            <p class="left-a">Lorem ipsum, dolor sit elit. Adipisci, sed?</p>
+            <p class="left-a">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="generator">
+                    <P>Your Nickname is:</P>
+                    <p id="gen"></p>
+                </div>
+                <button class="btnGen" onclick="nickGen(nicknames)">Generate</button>
+            </div>
+        </section>
+    </main>
+
+
+
+    <script>
+let nicknames = ["BeautifulCynthia","NovaStar","ZeeBoss","Sparky","RavenBlack","Frostbite","sunnySide","AceVentura","LunaLove","BlazeWild","Gizmo",
+                "MuffinTop","SweetCheeks","HoneyBee","CuddleBear","Fluffball","Sugarplum","Snookies",];
+
+function nickGen(nicknames) {
+    let random = Math.floor(Math.random() * nicknames.length);
+    document.getElementById('gen').innerHTML = nicknames[random];
+} 
+nickGen(nicknames);
+
+
+
+    </script>
+</body>
+</html>
