@@ -1,0 +1,84 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>BootCamp Survey</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body> 
+      <!-- header -->
+  <h1 id="title"> Welcome to BootCamp Survey </h1>
+  <p id="description">Please fill form with the appropraite details</p>
+      <!-- header end -->
+    <!-- form begins -->
+<form method="POST" id="survey-form">
+    <!-- personal details -->
+  <fieldset>  
+    <label for="name" id="name-label"> Name
+      <input type="text" id="name" name="name" placeholder="Enter your names" required>
+    </label>
+    <label for="email" id="email-label"> Email
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    </label>
+    <label for="number" id="number-label"> Age
+      <input type="number" id="number" name="age" patteren="[0-5]{2,}" min="13" max="30" placeholder="Enter your age" required>
+    </label>
+    <label for="pass" id="password-label"> Create Password
+      <input type="password" id="pass"  name="password" pattern="[a-z0-5]{8,}" placeholder="Create a strong password" required>
+    </label>
+  </fieldset>
+      <!-- Q&A -->
+  <fieldset>
+    <label for="dropdown"> Which of these best describes your current skill level
+      <select id="dropdown" name="dropdown"> 
+      <option value="""" class="adjust">(select one)</option>
+      <option value="1" class="adjust">Beginner</option>
+      <option value="2" class="adjust">Novice</option>
+      <option value="3" class="adjust">Intermediate</option>
+      <option value="4" class="adjust">Advance</option>
+      <option value="5" class="adjust">Master</option>
+    </select>
+    </label>
+  </fieldset>
+  <fieldset>
+    <legend>Referer(required)</legend>
+    <label for="faceBook"><input id="faceBook" class="adjust" type="radio" name="refer" value="faceBook" checked />FaceBook</label>
+  <label for="whatsApp"><input id="whatsApp" class="adjust" type="radio" name="refer" value="whatsApp" />Whatsapp</label>
+  <label for="instagram"><input id="instagram" class="adjust" type="radio" name="refer" value="instagram" />Instagram</label>
+  <label for="twitter"><input id="twitter" type="radio" class="adjust" name="refer" value="twitter" />Twitter</label>
+   <label for="other"><input id="other" class="adjust" type="radio" name="refer" value="other" />Other</label>
+      </fieldset>
+
+<fieldset>
+  What is your specialization?
+<label for="frontEnd">
+        <input id="forntEnd" type="checkbox" class="adjust" name="frontEnd" value="frontEnd"/> Front-End
+</label>  
+<label for="backEnd">
+        <input id="backEnd" type="checkbox" class="adjust" name="backEnd" value="backEnd" /> Back-End
+</label>  
+<label for="fullStack">
+        <input id="fullStack" type="checkbox" class="adjust" name="fullStack" value="fullStack"/> Full-Stack
+</label>  
+<label for="cloudComp">
+        <input id="cloudComp" type="checkbox" class="adjust" name="cloudComp" value="cloudComputing" /> Cloud Computing
+</label> 
+<label for="machineLearn">
+        <input id="machineLearn" type="checkbox"  class="adjust" name="machineLearn" value="machineLearning" /> Machine Learning
+</label>  
+</fieldset>
+<fieldset>
+<label for="about">Please describe your self:
+      <textarea id="bio" name="about" rows="3" cols="30" placeholder="I love JAVA, C++..."></textarea>
+        </label>
+</fieldset>
+
+<input id="submit" type="submit" value="Submit">
+</form>
+</body>
+</html>
+
+** end of undefined **
+

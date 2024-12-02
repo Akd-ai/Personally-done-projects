@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eco-Flex Create Account</title>
+    <link rel="stylesheet" href="form1.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="header">
+        <h1>Eco-<span style="color: beige">Flex</span></h1>
+        <p>Create a new account</p>
+        <p>Please input all form fields with the appropriate details</p>
+      </div>
+      <div class="container">
+        <form method="post" action="#" class="formNew" id="registrationForm">
+          <fieldset>
+            <label for="firstName"
+              >First Name:
+              <input
+                type="text"
+                id="firstName"
+                name="firstName"
+                placeholder="Input your First Name"
+                aria-label="First Name"
+                required
+              />
+            </label>
+            <label for="lastName"
+              >Last Name:
+              <input
+                type="text"
+                id="lastName"
+                name="lastName"
+                placeholder="Input your Last Name"
+                aria-label="Last Name"
+                required
+              />
+            </label>
+            <label for="email"
+              >Email:
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Input your Email"
+                aria-label="Email Address"
+                required
+              />
+            </label>
+            <label for="number"
+              >Age:
+              <input
+                type="number"
+                id="number"
+                name="age"
+                min="13"
+                max="40"
+                placeholder="Input Age"
+                aria-label="Age"
+                required
+              />
+            </label>
+            <label for="passWord"
+              >Password:
+              <input
+                type="password"
+                id="passWord"
+                name="passWord"
+                pattern="[a-zA-Z0-9!@#\$%\^&\*]{8,}"
+                placeholder="Create a strong password (min 8 characters)"
+                aria-label="Password"
+                required
+              />
+            </label>
+            <label for="re-password"
+              >Retype Password:
+              <input
+                type="password"
+                id="re-passWord"
+                name="re-password"
+                pattern="[a-zA-Z0-9!@#\$%\^&\*]{8,}"
+                placeholder="Match Password"
+                aria-label="Retype Password"
+                required
+              />
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <legend style="color: #ffd700; font-weight: bold">
+              Current Mastery Level (Compulsory)
+            </legend>
+            <label for="beginner">
+              <input
+                type="radio"
+                name="masteryLevel"
+                class="line"
+                id="beginner"
+                checked
+              />Beginner
+            </label>
+            <label for="expert">
+              <input
+                type="radio"
+                name="masteryLevel"
+                class="line"
+                id="expert"
+              />Expert
+            </label>
+            <label for="master">
+              <input
+                type="radio"
+                name="masteryLevel"
+                class="line"
+                id="master"
+              />Master
+            </label>
+            <label for="pro">
+              <input
+                type="radio"
+                name="masteryLevel"
+                class="line"
+                id="pro"
+              />Professional
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <label for="referrer"
+              >How did you hear about us?
+              <select
+                name="referrer"
+                id="referrer"
+                aria-label="How did you hear about us?"
+              >
+                <option value="">(Select one)</option>
+                <option value="s1">Facebook</option>
+                <option value="s2">WhatsApp</option>
+                <option value="s3">Instagram</option>
+                <option value="s4">Twitter</option>
+                <option value="s5">LinkedIn</option>
+                <option value="s6">Discord</option>
+                <option value="s7">Friend</option>
+                <option value="s8">Google</option>
+                <option value="s9">Yahoo</option>
+                <option value="s10">Bing</option>
+                <option value="s11">Other</option>
+              </select>
+            </label>
+            <label for="profile"
+              >Input Referrer Profile Link:
+              <input
+                type="text"
+                name="profile"
+                id="profile"
+                aria-label="Referrer Profile Link"
+              />
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <legend style="color: #ffd700; font-weight: bold">
+              Course Choice
+            </legend>
+            <label for="html">
+              <input type="checkbox" name="html" class="line" id="html" />HTML
+            </label>
+            <label for="css">
+              <input type="checkbox" name="css" class="line" id="css" />CSS
+            </label>
+            <label for="javascript">
+              <input
+                type="checkbox"
+                name="javascript"
+                class="line"
+                id="javascript"
+              />JavaScript
+            </label>
+            <label for="php">
+              <input type="checkbox" name="php" class="line" id="php" />PHP
+            </label>
+            <label for="java">
+              <input type="checkbox" name="java" class="line" id="java" />Java
+            </label>
+            <label for="python">
+              <input
+                type="checkbox"
+                name="python"
+                class="line"
+                id="python"
+              />Python
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <label for="bio">
+              <span style="color: #ffd700"
+                >What projects have you worked on?</span
+              >
+              <textarea
+                name="bio"
+                id="bio"
+                cols="30"
+                rows="10"
+                placeholder="I spearheaded the..."
+                aria-label="Project Description"
+                required
+              ></textarea>
+            </label>
+          </fieldset>
+
+          <div class="check-container">
+            <label for="terms-and-conditions">
+              <input
+                class="line"
+                id="terms-and-conditions"
+                type="checkbox"
+                name="terms-and-conditions"
+                required
+              />
+              I accept the <a href="#" target="_blank">terms and conditions</a>
+            </label>
+            <a class="right-a" href="selfRegFormLogin.html" target="_top"
+              >Login</a
+            >
+          </div>
+
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+    </div>
+    <!-- go through this for better understanding -->
+    <script>
+      document
+        .getElementById("registrationForm")
+        .addEventListener("submit", function (event) {
+          const password = document.getElementById("passWord").value;
+          const rePassword = document.getElementById("rePassWord").value;
+
+          if (password !== rePassword) {
+            event.preventDefault(); // Stops form submission
+            alert("Passwords do not match!");
+          }
+        });
+    </script>
+  </body>
+</html>

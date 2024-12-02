@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco-Flex Login Account</title>
+    <link rel="stylesheet" href="form1.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="header">
+            <h1>Eco-<span style="color: beige;">Flex</span></h1>
+            <p>Create a new account</p>
+            <p>Please input all form with the appropriate detail</p>
+        </div>
+        <div class="container">
+            <form method="post" action="#" class="formNew">
+                <fieldset>
+                    <label for="login-name"> Enter your Names:
+                        <input type="text" id="login-name" name="login-name" 
+                     placeholder="Input your Names" required>
+                    </label>
+                    <label for="email">Enter registered email:
+                        <input type="email" id="email" name="email" 
+                         placeholder="Input your Email" required>
+                    </label>
+                    <label for="password"> Password:
+                        <input type="password" id="passWord" name="password" 
+                        pattern="[a-z0-5!@#$%^&*_-]{8,}" 
+                        placeholder="Enter your password" required>
+                    </label>
+                    <label for="re-passWord"> Retype Password:
+                        <input type="password" id="rePassWord" name="re-passWord" 
+                        pattern="[a-z0-5!@#$%^&*_-]{8,}" 
+                        placeholder="Match Password" required>
+                </fieldset>
+                 
+                                <!-- RegisterBtn -->
+                        <a  href="selfRegForm2.html" target="_top" >Create a New Account</a>
+                </div>
+
+                        <!-- submit button -->
+                <input class="login-submit" type="submit" value="Submit">
+                        
+            </form>
+        </div>
+    </div>
+    
+    <script>
+        document.querySelector('form').addEventListener('submit', function(event) {
+            const password = document.getElementById('passWord').value;
+            const rePassword = document.getElementById('rePassWord').value;
+    
+            if (password !== rePassword) {
+                event.preventDefault(); // Stops form submission
+                alert("Passwords do not match!");
+            }
+        });
+    </script>    
+</body>
+</html>
