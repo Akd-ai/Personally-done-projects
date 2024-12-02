@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bg-Changer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to my Background Changer</h1>
+        <p><em>This is a site created for the purpose of 
+            changing the background color with the click of buttons.</em></p>
+    </header>
+    
+        <div class="instructions">
+            <h3>Click each button to change the color of the background</h3>
+            <h4>The Red, Green, and Blue button will change
+                the background will change according to the button clicked</h4>
+            <h4>The Random button will generate a random color on each click for the baclground color</h4>
+        </div>
+
+        <div class="buttons">
+                <button type="button"  id="redBtn" 
+                  onclick="redBg()">Red</button>
+                <button type="button" id="greenBtn" 
+                  onclick="greenBg()">Green</button>
+                <button type="button" id="blueBtn" 
+                 onclick="blueBg()">Blue</button>
+        </div>
+        <!-- <div class="button-last">
+            <button type="button"  id="randBtn" 
+                  onclick="document.body.style.backgroundColor=randGen(colors)">Rand</button>
+        </div> -->
+
+        <div class="button-last">
+            <button type="button"  id="randBtn" 
+                  onclick="randGen(colors)">Rand</button>
+        </div>
+<script>
+    
+    function redBg() {
+        document.body.style.backgroundColor = "#ff0000";
+    }
+
+    function greenBg() {
+        document.body.style.backgroundColor = "#00ff00";
+    }
+
+    function blueBg() {
+        document.body.style.backgroundColor = "#0000FF";
+    }
+    
+
+            // my code
+
+//     let colors = ["red", "green", "blue","Gold","royalblue","Midnightblue", "yellow", "orange", "purple", "grey", "brown","pink"];
+
+//     function randGen(colors) {
+//         // return random[Math.floor(Math.random() * colors.length)];
+// }
+//     document.body.style.backgroundColor = "colors[random]";
+
+
+                        // Cythia first code
+let colors = ["red", "green", "blue","Gold","","royalblue","Midnightblue", "yellow", "orange", "purple", "grey", "brown","pink"]; // Array of color names
+
+function randGen(colors) {
+    
+    let random = Math.floor(Math.random() * colors.length); 
+    
+    document.body.style.backgroundColor = colors[random]; 
+}   
+
+randGen(colors);
+
+
+
+        // Cynthai's 2nd code
+
+//     let colors = ["red", "green", "blue","Gold","","royalblue","Midnightblue", "yellow", "orange", "purple", "grey", "brown","pink"];
+
+// function randGen() {
+
+//     let random = [Math.floor(Math.random() * colors.length)];
+//     return colors [random];
+// }
+//     document.body.style.backgroundColor = randGen(colors);
+
+</script>
+            
+    
+
+
+</body>
+</html>

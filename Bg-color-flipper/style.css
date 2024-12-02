@@ -1,0 +1,86 @@
+body {
+    background-color: azure;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;\
+   margin: 0;
+   padding: 0;
+}
+
+
+h1, h3, h4, p {
+    text-align: center;
+}
+
+h1 {
+    margin: 80px auto 0 auto;
+}
+
+.buttons {
+    margin-top: 50px;
+    width: 100%;  
+    text-align: center;
+}
+
+#redBtn, #greenBtn, #blueBtn {
+    margin: auto 20px;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: 600;
+
+}
+
+#redBtn {
+    background-color: #ff0000;
+    color: white;
+}
+#redBtn:hover {
+    background-color: #ff0000b1;
+    color: white;
+    transition: all 0.3s;
+}
+
+#greenBtn {
+    background-color: #00ff00;
+    color: white;
+}
+#greenBtn:hover {
+    background-color: #00ff00b1;
+    color: white;
+    transition: all 0.3s;
+}
+
+#blueBtn {
+    background-color: #0000ff;
+    color: white;
+}
+#blueBtn:hover {
+    background-color: #0000ffb1;
+    color: white;
+    transition: all 0.3s;
+}
+
+
+
+.button-last {
+    margin-top: 50px;
+    width: 100%;  
+    text-align: center;
+}
+
+#randBtn {
+    margin: auto 20px;
+    padding: 15px 129px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.5em;
+    font-weight: 600;
+    background: linear-gradient(90deg,red,green,blue);
+    color: white;
+}
+
+#randBtn:hover {
+    background: linear-gradient(90deg,red,green,blue,white);
+    color: white;
+    transition: all 0.3s;
+}
